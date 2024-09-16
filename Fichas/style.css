@@ -1,0 +1,318 @@
+/* Contenedor principal */
+.grid-container {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    grid-template-rows: auto; /* Filas automáticas basadas en el contenido */
+    margin: 3cqh 60px;
+}
+
+/* Estilos para los elementos de la cuadrícula */
+.grid-item {
+
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    
+}
+
+/* Responsivo: cuando la pantalla es pequeña, las columnas se ajustan */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+    }
+}
+
+
+.hero-card{
+    display: flex;
+    justify-content: space-evenly;
+    color: #000;
+    overflow: hidden;
+}
+
+.hero-card hr{
+    height: 450px;
+    width: 1px;
+    background-color: #d9d9d9;
+    margin-top: 40px;
+}
+
+.card {
+    background: #d9d9d9;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    margin: 80px 40px 30px 30px;
+    height: 400px;
+    align-items: center;
+}
+.card h2 {
+    margin: 0;
+    padding: 0rem 1.5rem 1.5rem;
+    font-size: 25px;
+
+}
+.card .desc {
+    padding: 0.5rem 1.5rem;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+.card a{
+    text-decoration: none;
+    color: black;
+}
+.card i{
+    font-size: 30px;
+    padding-left: 25px;
+    
+}
+.img-avatar img{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    border-radius: 50%;
+    border: 6px solid white;
+    background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+    top: 15px;
+    left: 150px;
+}
+
+.card-text {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.title-total {
+    padding: 2.5em 1.5em 1.5em 1.5em;
+}
+
+
+.img-portada {
+    width: 100%;
+}
+
+.portada {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-image: url("../img/perfil1.jpg");
+    background-position: bottom center;
+    background-size: cover;
+}
+
+
+
+h3 {
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    padding: 20px 0 20px 0;
+}
+
+.card-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.card1 {
+    background-color: #d9d9d9;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    width: 300px;
+    margin-bottom: 15px;
+    
+}
+
+.card-img {
+    width: 80px;
+    height: auto;
+
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content h2 {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.card-content p {
+    margin: 5px 0;
+    color: #000;
+    font-size: 0.9rem;
+}
+
+.pan{
+    display: flex;
+    justify-content: space-around;
+}
+
+:root {
+    --border-size: 0.125rem;
+    --duration: 250ms;
+    --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+    --color-primary: white;
+    --color-secondary: #2e2e2e;
+    --color-tertiary: dodgerblue;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --space: 1rem;
+}
+
+
+.multi-button {
+    display: flex;
+    justify-content: space-around;
+}
+
+.multi-button button {
+    border: none;
+    flex-grow: 1;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    transition: flex-grow var(--duration) var(--ease);
+    font-weight: 600;
+}
+
+
+.multi-button button:hover,
+.multi-button button:focus {
+    flex-grow: 2;
+    background-color: #b9b9b9;
+    
+}
+
+.multi-button button:focus {
+    outline-offset: calc(var(--border-size) * -3);
+}
+
+.multi-button:hover button:focus:not(:hover) {
+    flex-grow: 1;
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+}
+
+.multi-button button:active {
+    transform: translateY(var(--border-size));
+}
+
+.selectFicha{
+    border: none;
+    background-color: #f2f2f2;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-right: 100px;
+    cursor: pointer;
+}
+
+
+
+.navbar-content3{
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.botones-vistafichas{
+    margin: 0 0px 0 20px;
+}
+.multi-button .list {
+    font-size: 25px;
+}
+.multi-button .table {
+    font-size: 25px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border-radius: 25px;     /* Bordes redondeados */
+    padding: 0px 10px;       /* Espaciado interno */
+    width: 350px;            /* Ancho de la caja de búsqueda */
+    background-color: #d9d9d9;
+}
+
+.search-input {
+    border: none;            /* Sin borde en el campo de búsqueda */
+    outline: none;           /* Sin borde al hacer clic */
+    flex-grow: 1;            /* Hace que el campo ocupe todo el espacio disponible */
+    font-size: 12px;
+    background-color: #d9d9d9;
+}
+
+.search-button {
+    background: none;        /* Sin fondo en el botón */
+    border: none;            /* Sin borde */
+    cursor: pointer;         /* Muestra un cursor de mano en hover */
+    padding: 5px;            /* Espaciado en el botón */
+}
+
+.search-button i {
+    font-size: 20px;         /* Tamaño del ícono */
+    color: #333;             /* Color del ícono */
+}
+
+.Filtrar{
+    margin: 0 10px 0 0px;
+
+}
+.Etapa{
+    border: none;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 14px;
+    cursor: pointer;  
+
+}
+
+.botones-boaficha{
+    margin-right: 130px;
+}
+.botones-boaficha button{
+    border: none;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;  
+}
+.botones-boaficha .bxs-trash{
+    font-size: 25px;
+}
+.botones-boaficha .bx-plus{
+    font-size: 25px;
+}
+
+.pan{
+    padding: 10px 0 10px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.flecha-pan{
+    font-size: 22px;
+}
+.pan a{
+    text-decoration: none;
+    color: #242526;
+}

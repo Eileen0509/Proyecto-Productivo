@@ -1,73 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-/*header*/
-.header {
-    padding: 0px 12px 21px 0px;
-    top: 0;
-    width: 100%;
-    height: 110px;
-    background-color: #39a900;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-.contenedor-header {
-    height: 100px;
-    width: 100%;
-    position: absolute;
-    margin-top: 0;
-    text-align: left;
-}
-.contenedor-header img{
-    height: 90px;
-    width: 125px;
-    position: relative;
-    object-fit: cover;
-    z-index: 1;
-}
-
-.titulo-header{
-    width: 250px;
-    flex-direction: column;
-    padding-right: 17px;
-    box-sizing: border-box;
-}
-
-.titulo-header, 
-.descripcion-titulo{
-    margin: 0;
-    font-family: Work Sans;
-    font-weight: 600;
-    align-self: stretch;
-    position: relative;
-    z-index: 1;
-    color: white;
-}
-.slna{
-    font-weight: 800;
-    font-size: 22px;
-    color: white;
-}
-
-.contenedor-header,
-.titulo-header {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin-top: 10px;
-}
-
-
-
-
-
 /*contenido*/
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+
+}
+
 .wrapper {
     width: 400px;
     border-radius: 8px;
@@ -80,11 +20,13 @@
 form {
     display: flex;
     flex-direction: column;
+    
 }
 h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #fff;
+    margin-bottom: 2em;
 }
 .input-field {
     position: relative;
@@ -130,9 +72,15 @@ h2 {
 .wrapper a:hover {
     text-decoration: underline;
 }
-button {
-    background: #2c2c2c;
-    color: #fff;
+.botones {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 0 20px 0;
+    text-decoration: none;
+}
+.botones a {
+    background-color: #fff;
+    color: #000;
     font-weight: 600;
     border: none;
     padding: 6px 10px;
@@ -141,12 +89,15 @@ button {
     font-size: 16px;
     border: 3px solid transparent;
     transition: 0.3s ease;
-    width: 200px;
+    width: 150px;
+    margin-top: 30px;
+    text-decoration: none;
 }
-button:hover {
+
+.botones a:hover {
     color: #fff;
     border-color: #fff;
-    background: rgba(255, 255, 255, 0.15);
+    background: #2c2c2c;
 }
 
 
@@ -170,18 +121,19 @@ form .code-space {
 .code-space input::-webkit-outer-spin-button {
     display: none;
 }
+
 form .codigo {
     margin-top: 25px;
     width: 100%;
-    color: #fff;
+    color: #000;
     font-size: 1rem;
     border: none;
     padding: 9px 0;
     cursor: pointer;
     border-radius: 6px;
-    pointer-events: none;
-    background: #2c2c2c;
+    background: #fff;
     transition: all 0.2s ease;
+    font-weight: 600;
 }
 form .codigo.active {
     background: #2c2c2c;
@@ -190,59 +142,6 @@ form .codigo.active {
 form .codigo:hover {
     color: #fff;
     border-color: #fff;
-    background: rgba(255, 255, 255, 0.15);
+    background: #2c2c2c;
+
 }
-
-
-
-
-
-
-
-
-
-/*footer*/
-.footer-container {
-    width: 423px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 21px;
-    max-width: 100%;
-}
-.url_footer {
-    display: flex;
-    letter-spacing: 0.25em;
-    font-weight: 700;
-    margin-block-start: 25px;
-    margin-block-end: 0px;
-}
-.url_footer a{
-    font-weight: bold;
-    font-size: 15px;
-    text-decoration: none;
-    color: white;
-    font-family: Work Sans;
-}
-#link1{
-    margin: 0px 30px;
-}
-#link2{
-    margin: 0px 30px;
-}
-#link3{
-    margin: 0px 30px;
-}
-.footer {
-    background-color: #39a900;
-    text-align: center;
-}
-
-.contenedor-todo{
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    
-}
-
-
