@@ -1,0 +1,146 @@
+.card {
+    background-color: #d2d2d2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 160px;
+    height: auto;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details p {
+    margin: 5px 5px;
+    font-size: 1.2em;
+}
+.links-footer-cardficha{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-ficha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-ficha a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 3px;
+}
+
+.footer-ficha a:hover {
+    text-decoration: underline;
+}
+.editar{
+    font-size: 38px;
+    cursor: pointer;
+}
+
+
+/* tabla de listado */
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    display: none; 
+}
+th { 
+    background-color: #f2f2f2; 
+}
+td, th { padding: 8px; 
+    text-align: left; 
+    border-bottom: 1px solid #ddd; 
+}
+tr:hover { background-color: #f5f5f5; 
+}
+.green { background-color: #39A900; 
+} 
+.yellow { background-color: #FFCE40; 
+} 
+.red { background-color: #671C34; 
+} 
+.toggle-btn { cursor: pointer; 
+    margin-bottom: 40px;
+}
+.listado{
+    margin: 50px 90px;
+}
+@media only screen and (max-width: 500px) {
+    .logo {
+        display: none !important;
+    }
+    .listado{
+        overflow-x: scroll;
+        margin: 10px;
+    }
+    .edit-ficha{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .footer-ficha {
+        display: flex;
+        flex-direction: column;
+        font-size: 1em;
+    }
+    .details{
+        display: flex;
+        flex-direction: column;
+    }
+    .details p{
+        font-size: 1.1em;
+    }
+    .card{
+        padding: 15px;
+        width: 330px;
+    }
+    .header h2{
+        font-size: 1.7em;
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 400px) {
+    
+    .card h2{
+        font-size: 1.5em;
+    }
+    .card{
+        padding: 15px;
+        width: 290px;
+    }
+    .details p{
+        font-size: 1em;
+    }
+    .footer-ficha a{
+        font-size: 1em;
+    }
+}

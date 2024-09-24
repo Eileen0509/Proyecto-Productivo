@@ -1,0 +1,29 @@
+/* STYLE DEL CONTENIDO */
+
+.alert-success.new2 {
+    background: #00324d1e;
+    border: none;
+    border-left: 4px solid #00324d;
+    border-radius: 0;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
+    margin: 0px 0px 0 20px;
+    }
+
+.alert-success.new2.p-4 {
+    padding: 0.8rem 0.8rem;
+}
+
+.alert-success .alert-body {
+    padding-left: 0.8rem;
+    display: table-cell;
+    color: rgba(0,0,0,0.5);
+    font-size: 1rem;
+}
+
+.alert-success .alert-header {
+    font-weight: 700;
+    color: #00324d;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+}

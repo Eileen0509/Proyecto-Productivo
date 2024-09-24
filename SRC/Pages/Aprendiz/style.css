@@ -1,0 +1,125 @@
+.card {
+    background-color: #d2d2d2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 160px;
+    height: auto;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    margin: 0 0px 30px 30px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.details p {
+    margin: 5px 5px;
+    font-size: 1.2em;
+}
+
+.footer-ficha {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.links-footer-cardaprendiz{
+    display: flex;
+    flex-direction: column;
+}
+.footer-ficha a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 3px;
+}
+
+.footer-ficha a:hover {
+    text-decoration: underline;
+}
+.observacion{
+    display: flex;
+    right: 40px;
+    bottom: 40px;
+    align-items: center;
+    cursor: pointer;
+}
+.observacion p:hover{
+    text-decoration: underline;
+}
+.observacion p{
+    font-size: 1rem;
+}
+.observacion .obser-icon{
+    font-size: 45px;
+}
+@media only screen and (max-width: 500px) {
+    .card{
+        width: 340px;
+        padding: 20px 15px;
+        margin: 20px 0;
+    }
+    .card h2{
+        font-size: 1.5em;
+    }
+    .card h3{
+        font-size: 1.1em;
+    }
+    .details p{
+        font-size: 1.1em;
+    }
+    .footer-ficha{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center ;
+    }
+    .footer-ficha a{
+        font-size: 1em;
+    }
+    .logo{
+        display: none;
+    }
+    .details{
+        display: block;
+        overflow-wrap: break-word;
+        white-space: normal;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .card{
+        width: 285px;
+    }
+    .card h2{
+        font-size: 1.3em;
+    }
+    .card h3{
+        font-size: 1em;
+    }
+    .details p{
+        font-size: 1em;
+    }
+    
+}

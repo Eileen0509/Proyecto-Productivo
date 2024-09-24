@@ -1,0 +1,52 @@
+/*style del cntenido*/
+.wrapper {
+    width: 400px;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    background-color: #00324d;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.wrapper p{
+    color: white;
+    text-align: justify;
+    padding-top: 20px ;
+    padding-bottom: 20px;
+    font-size: 1rem;
+    margin: 10px 0 15px 0;
+}
+
+.botones a{
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 120px;
+    text-decoration: none;
+}
+.botones a:hover {
+    color: #fff;
+    background: #2e2e2e;
+}
+@media only screen and (max-width: 750px) {
+
+    .wrapper {
+        width: 280px;   
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        }
+    
+}

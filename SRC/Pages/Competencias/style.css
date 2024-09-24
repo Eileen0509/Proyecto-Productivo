@@ -1,0 +1,316 @@
+/* tarjetas de competencias */
+.grid-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    grid-template-rows: auto; /* Filas automáticas basadas en el contenido */
+    margin: 30px 60px;
+    
+}
+
+.card {
+    background-color: #d3d3d3;
+    border-radius: 15px;
+    padding: 15px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header p {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card-header img {
+    width: 100px;
+    height: auto;
+}
+
+.card-body {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-footer i {
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+.pan{
+    padding: 10px 0 10px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+:root {
+    --border-size: 0.125rem;
+    --duration: 250ms;
+    --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+    --color-primary: white;
+    --color-secondary: #2e2e2e;
+    --color-tertiary: dodgerblue;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --space: 1rem;
+}
+
+
+.multi-button {
+    display: flex;
+    justify-content: space-around;
+}
+
+.multi-button button {
+    border: none;
+    flex-grow: 1;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: flex-grow var(--duration) var(--ease);
+    font-weight: 600;
+    background-color: #fff;
+}
+
+
+.multi-button button:hover,
+.multi-button button:focus {
+    flex-grow: 2;
+    background-color: #b9b9b9;
+    
+}
+
+.multi-button button:focus {
+    outline-offset: calc(var(--border-size) * -3);
+}
+
+.multi-button:hover button:focus:not(:hover) {
+    flex-grow: 1;
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+}
+
+.multi-button button:active {
+    transform: translateY(var(--border-size));
+}
+
+.selectFicha{
+    border: none;
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-right: 100px;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+
+
+.navbar-content3{
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.botones-vistafichas{
+    margin: 0 0px 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.multi-button .list {
+    font-size: 35px;
+}
+.multi-button .table {
+    font-size: 30px;
+}
+
+/* caja de buscar */
+.search-box1 {
+    display: flex;
+    align-items: center;
+    border-radius: 25px;     
+    padding: 5px 10px;       
+    width: 450px;            
+    background-color: #d9d9d9;
+}
+
+.search-input {
+    border: none;            
+    outline: none;           
+    flex-grow: 1;            /* Hace que el campo ocupe todo el espacio disponible */
+    font-size: 1rem;
+    background-color: #d9d9d9;
+}
+
+.search-button {
+    background: none;        
+    border: none;            
+    cursor: pointer;        
+    padding: 5px;            
+}
+
+.search-button i {
+    font-size: 20px;         
+    color: #333;            
+}
+
+/* filtrar */
+
+.Filtrar{
+    font-weight: 500;
+}
+.Etapa{
+    margin-left: 20px;
+    border: none;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    padding: 8px 10px 8px 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;  
+}
+
+
+.botones-boaficha{
+    margin-right: 130px;
+}
+.botones-boaficha button{
+    border: none;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    align-items: center;
+    cursor: pointer; 
+    padding: 8px 10px; 
+}
+.botones-boaficha button:hover{
+    background-color: #b9b9b9;
+}
+.botones-boaficha .bxs-trash{
+    font-size: 25px;
+}
+.botones-boaficha .bx-plus{
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-template-rows: auto; 
+        margin: 20px 0;
+        place-items: center; 
+    }
+    .card{
+        width: 320px;
+        padding: 10px
+    }
+    .card-body{
+        font-size: 1em;
+    }
+    .multi-button button{
+        padding: 7px;
+    }
+    .selectFicha{
+        padding: 7px;
+        margin: 0;
+    }
+    .botones-vistafichas{
+        margin: 0;
+    }
+    .botones-boaficha{
+        position: absolute;
+        bottom: 0;
+        right: 0px;
+        margin: 0;
+    }
+    .navbar-content3{
+        position: relative;
+        padding: 50px 0;
+        margin: 20px 0px 0 0px;
+        justify-content: center !important;
+        align-items: center;
+    }
+    .Filtrar{
+        margin-left: 10px;
+        width: auto;
+    }
+    .Etapa{
+        margin-left: 5px;
+        padding: 5px;
+        width: 140px;
+    }
+    .search-box1{
+        position: absolute;
+        top: 0;
+        width: 330px;
+    }
+    .multi-button .list {
+        font-size: 25px;
+    }
+    .multi-button .table {
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .search-box1{
+        width: 280px;
+        height: 35px;
+    }
+    .Filtrar{
+        font-size: 0.95em;
+    }
+    .Etapa{
+        font-size: 0.95em;
+    }
+    .botones-boaficha button{
+        padding: 5px;
+    }
+    .multi-button button{
+        font-size: 0.8em;
+    }
+    .selectFicha{
+        font-size: 0.8em;
+    }
+    .multi-button .list {
+        font-size: 22px;
+    }
+    .multi-button .table {
+        font-size: 22px;
+    }
+    .botones-boaficha .bxs-trash{
+        font-size: 22px;
+    }
+    .botones-boaficha .bx-plus{
+        font-size: 22px;
+    }
+    .pan{
+        padding: 10px 0 !important;
+    }
+    .card{
+        width: 280px;
+        padding: 10px
+    }
+    .card h3{
+        font-size: 1em;
+    }
+    .card-body{
+        font-size: 0.8em;
+    }
+}
+
