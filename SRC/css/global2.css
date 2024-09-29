@@ -1,4 +1,4 @@
-/* STYLE GENERALES */
+/* STYLE GENERALES PARA TODAS LAS PAGINAS DESPUES DE EDAR INICIO A LA SESION*/
 *{
     box-sizing: border-box;
     margin: 0;
@@ -236,7 +236,6 @@ body.dark .sidebar .header .toggle {
     border-radius: 6px;
     text-decoration: none;
     transition: var(--tran-03);
-    margin-bottom: ;
 }
 
 .sidebar li a:hover {
